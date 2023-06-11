@@ -4,7 +4,16 @@ const productSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      required: [true, 'Insira um e-mail válido'],
+      required: [true, 'Insira um nome válido'],
+    },
+    color: {
+      type: String,
+      required: [true, 'Insira uma cor'],
+    },
+    year: {
+      type: Number,
+      required: true,
+      default: 0,
     },
     quantity: {
       type: Number,
